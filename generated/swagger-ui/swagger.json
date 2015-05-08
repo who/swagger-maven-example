@@ -160,7 +160,7 @@
         } ]
       }
     },
-    "/pet/{petId}" : {
+    "/pet/{petId }" : {
       "get" : {
         "tags" : [ "pet" ],
         "summary" : "Find pet by ID",
@@ -194,7 +194,9 @@
         }, {
           "petstore_auth" : [ "write:pets", "read:pets" ]
         } ]
-      },
+      }
+    },
+    "/pet/{petId}" : {
       "post" : {
         "tags" : [ "pet" ],
         "summary" : "Updates a pet in the store with form data",
